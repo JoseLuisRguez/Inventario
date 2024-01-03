@@ -20,7 +20,7 @@ public class ControldeInventarioApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("*")
+                        .allowedOrigins("https://miinventario.azurewebsites.net")
                         .allowCredentials(true)
                         .allowedHeaders("Origin", "Authorization", "Content-Type")
                         .allowedMethods("GET", "POST", "PUT", "DELETE");
